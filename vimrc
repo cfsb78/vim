@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 filetype plugin on
 set nu
+let mapleader=","
 if $COLORTERM == 'gnome-terminal' 
 	set term=gnome-256color 
 	colorscheme railscasts 
