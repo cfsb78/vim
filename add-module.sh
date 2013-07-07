@@ -14,13 +14,13 @@ show_usage()
 }
 add_module()
 {
-  moduleDir = ~/.vim/bundle/$1
+  moduleDir="~/.vim/bundle/$1"
   echo "Adding submodule $1 to $moduleDir ..."
   git submodule add $2 $moduleDir
   echo "Initializing $1 submodule..."
-  git submodule init bundle/$1
+  git submodule init $moduleDir
   echo "Updating $1 submodule..."
-  git submodule update bundle/$1
+  git submodule update $moduleDir
   echo "Adding new files and commiting..."
   git add .
   git commit -m "Installed $1 as submodule"
@@ -35,7 +35,7 @@ fi
 cd ~/.vim
 
 if [ -e ~/.vim/bundle ]; then
-  add_module
+  add_module $1 $2
 else
    mkdir ~/vim/bundle
    add_module
