@@ -33,7 +33,7 @@ fi
 
 cd ~/.vim
 
-if [[-e ~/.vim/bundle ]]; then
+if [ -e ~/.vim/bundle ]; then
   add_module
 else
    mkdir ~/vim/bundle
