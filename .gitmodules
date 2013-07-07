@@ -4,3 +4,6 @@
 [submodule "/home/ubuntu/.vim/bundle/vim-javascript-syntax"]
 	path = /home/ubuntu/.vim/bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = https://github.com/csexton/snipmate.vim.git
