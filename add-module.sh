@@ -14,8 +14,8 @@ show_usage()
 }
 add_module()
 {
-  set moduleDir = ~/.vim/bundle/$1
-  echo "Adding submodule $1 to bundle/$1 ..."
+  moduleDir = ~/.vim/bundle/$1
+  echo "Adding submodule $1 to $moduleDir ..."
   git submodule add $2 $moduleDir
   echo "Initializing $1 submodule..."
   git submodule init bundle/$1
