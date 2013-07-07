@@ -9,7 +9,7 @@ if $COLORTERM == 'gnome-terminal'
 	set term=gnome-256color 
 	colorscheme railscasts 
 else 
-	colorscheme default 
+	colorscheme vividchalk 
 endif 
 
 set expandtab
