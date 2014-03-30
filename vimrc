@@ -26,10 +26,11 @@ inoremap jj <Esc>
 noremap <I> i<Space><Esc>r 
 command NT NERDTree
 
-
+" Load tag files in current directory
+set tags=./;,tags;
 
 " Open $MYVIMRC
-nmap <Leader>v :e $MYVIMRC
+nmap <Leader>v :sp $MYVIMRC
 
 " savednmap 
 map <Leader>s :w<CR>
@@ -39,6 +40,14 @@ map <Leader>S :source $MYVIMRC<CR>
 
 
 map <Leader>q :q<cr>
-map <Leader>q :q!<cr>
+map <Leader>qq :q!<cr>
+map <Leader>x :!
+map <c-j> $a<cr><Esc>
 
 
+" Laravel Specfic mapping
+map <Leader>at :e app/tests/acceptance/ 
+map <Leader>b :!clear & ./vendor/bin/behat<CR>
+map <Leader>bl :!clear & ./vendor/bin/behat -dl <cr>
+" append snippets in behat
+map <Leader>bas :!./vendor/bin/behat --append-snippets
