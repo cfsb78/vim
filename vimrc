@@ -48,11 +48,9 @@ map <c-j> $a<cr><Esc>
 
 
 " Laravel Specfic mapping
-map <Leader>at :e app/tests/acceptance/ 
+map <Leader>at :e app/tests/acceptance/<cr> 
 map <Leader>b :!clear & ./vendor/bin/behat<CR>
 map <Leader>bl :!clear & ./vendor/bin/behat -dl <cr>
 " append snippets in behat
 map <Leader>bas :!./vendor/bin/behat --append-snippets
-
-
 
