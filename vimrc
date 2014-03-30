@@ -36,8 +36,10 @@ nmap <Leader>v :sp $MYVIMRC
 map <Leader>s :w<CR>
 
 map <TAB> :NERDTreeToggle<CR>
-map <Leader>S :source $MYVIMRC<CR>
 
+" keys for updating vimrc
+map <Leader>S :source $MYVIMRC<CR>
+map <leader>upv :!~/.vim/update.sh " "
 
 map <Leader>q :q<cr>
 map <Leader>qq :q!<cr>
@@ -51,3 +53,6 @@ map <Leader>b :!clear & ./vendor/bin/behat<CR>
 map <Leader>bl :!clear & ./vendor/bin/behat -dl <cr>
 " append snippets in behat
 map <Leader>bas :!./vendor/bin/behat --append-snippets
+
+
+
