@@ -41,4 +41,4 @@ map <Leader>S :source $MYVIMRC<CR>
 map <Leader>q :q<cr>
 map <Leader>q :q!<cr>
 
-
+map <Leader>x :!
