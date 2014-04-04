@@ -1,6 +1,7 @@
 #/bin/sh
-if [[ -e ~/.vimrc ]]; then
-   mv ~/.vimrc ~/.vimrc_orig
+if [ -f ~/.vimrc ]; then
+   cp ~/.vimrc ~/.vimrc_orig
+   rm ~/.vimrc
 fi
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
