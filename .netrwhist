@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/vagrant/.vim'
 let g:netrw_dirhist_2='/vagrant'
@@ -6,3 +7,11 @@ let g:netrw_dirhist_3='/home/vagrant/.vim'
 let g:netrw_dirhist_4='/home/vagrant/.vim/colors'
 let g:netrw_dirhist_5='/vagrant'
 let g:netrw_dirhist_6='/home/vagrant/.vim'
+=======
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/chris'
+let g:netrw_dirhist_2='/Users'
+let g:netrw_dirhist_3='/Users/chris'
+let g:netrw_dirhist_4='/Users/chris/android_workspace/TDD_By_Example/python'
+let g:netrw_dirhist_5='/Users/chris/www/laravel-survey-backend'
+>>>>>>> 972a609ecfed0efb9210e12f188ec854c7868648
