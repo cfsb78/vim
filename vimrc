@@ -30,7 +30,7 @@ command NT NERDTree
 set tags=./;,tags;
 
 " Open $MYVIMRC
-nmap <Leader>v :sp $MYVIMRC
+nmap <Leader>v :newtab $MYVIMRC
 
 " savednmap 
 map <Leader>s :w<CR>
@@ -44,8 +44,16 @@ map <leader>upv :!~/.vim/update.sh " "
 map <Leader>q :q<cr>
 map <Leader>qq :q!<cr>
 map <Leader>x :!
-map <c-j> $a<cr><Esc>
 
+map <c-j> <c-w>j 
+map <c-h> <c-w>h 
+map <c-k> <c-w>k 
+map <c-l> <c-w>l 
+
+map <c-H> :vertical resize -10 <cr>      
+map <c-J> :horizontal resize -10<cr>
+map <c-L> :vertical resize +10<cr>       
+map <c-K> :horizontal resize +10<cr>
 
 " Laravel Specfic mapping
 map <Leader>at :e app/tests/acceptance/<cr> 
