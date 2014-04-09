@@ -37,6 +37,7 @@ map <Leader>s :w<CR>
 
 map <TAB> :NERDTreeToggle<CR>
 
+nmap <return> o<Esc>
 " keys for updating vimrc
 map <Leader>S :source $MYVIMRC<CR>
 map <leader>upv :!~/.vim/update.sh " "
@@ -47,10 +48,17 @@ map <Leader>x :!
 map <c-j> $a<cr><Esc>
 
 
+"PHP specific 
+map <tab>pnc<tab> S<?php <cr><cr>class <C-R>=expand("%:t:r")<CR> { <cr><cr>public function { <cr> }<cr><cr>}<Esc>kkkwww i
+
 " Laravel Specfic mapping
 map <Leader>at :e app/tests/acceptance/<cr> 
 map <Leader>b :!clear & ./vendor/bin/behat<CR>
 map <Leader>bl :!clear & ./vendor/bin/behat -dl <cr>
+
+" Behat specific autocompletes
+nmap bns<tab><tab> SScenario: <cr>Given: <cr>Then: <cr><Esc>kkk$i
+
 " append snippets in behat
 map <Leader>bas :!./vendor/bin/behat --append-snippets
 
