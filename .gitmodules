@@ -13,3 +13,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-behat"]
+	path = bundle/vim-behat
+	url = https://github.com/veloce/vim-behat.git
